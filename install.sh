@@ -4,9 +4,9 @@ cd /home/${USER}
 git clone https://github.com/frankpzh/terminal-setup.git terminal-setup
 cd terminal-setup
 
-echo "Installing powerline / tmux / zsh"
+echo "Installing powerline / tmux / zsh / htop"
 sudo pip install powerline-status
-sudo apt install tmux zsh
+sudo apt install tmux zsh htop
 
 sh -c "$(curl -fsSL https://raw.github.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
 git clone https://github.com/zsh-users/zsh-autosuggestions \
@@ -18,3 +18,5 @@ git clone https://github.com/junegunn/fzf.git \
 
 cp .tmux.conf ~/
 cp .zshrc ~/
+mkdir -p ~/.config/htop
+cp htoprc ~/.config/htop
