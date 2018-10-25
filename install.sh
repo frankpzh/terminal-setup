@@ -1,7 +1,11 @@
 #!/bin/bash
 
-sudo pip install powerline-status
+cd /home/${USER}
+git clone https://github.com/frankpzh/terminal-setup.git terminal-setup
+cd terminal-setup
 
+echo "Installing powerline / tmux / zsh"
+sudo pip install powerline-status
 sudo apt install tmux zsh
 
 sh -c "$(curl -fsSL https://raw.github.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
