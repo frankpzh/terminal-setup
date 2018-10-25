@@ -18,5 +18,6 @@ git clone https://github.com/junegunn/fzf.git \
 
 cp .tmux.conf ~/
 cp .zshrc ~/
+touch ~/.zsh_aliases
 mkdir -p ~/.config/htop
 cp htoprc ~/.config/htop
