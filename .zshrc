@@ -1,6 +1,6 @@
 export ZSH="/home/${USER}/.oh-my-zsh"
 
-ZSH_THEME="robbyrussell"
+ZSH_THEME="agnoster"
 
 plugins=(
   colored-man-pages
@@ -12,11 +12,10 @@ plugins=(
 )
 
 export FZF_BASE=/home/${USER}/.oh-my-zsh/custom/plugins/fzf
+[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 
 source $ZSH/oh-my-zsh.sh
 
 export LANG=en_US.UTF-8
 
-[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
-
-. /usr/local/lib/python2.7/dist-packages/powerline/bindings/zsh/powerline.zsh
+source ~/.zsh_aliases
